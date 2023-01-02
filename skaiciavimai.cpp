@@ -1,9 +1,10 @@
 #include "class.h"
 
-studentas::studentas(std::string vardas, std::string pavarde) {
-	this->vardas = vardas;
-	this->pavarde = pavarde;
+studentas::studentas(std::string vardas, std::string pavarde, std::vector<int>pazymiai, int egzas) : zmogus(vardas, pavarde) {
+	Pazymiai(pazymiai);
+	Egzas(egzas);
 }
+
 
 double count_galutinis(std::vector<int> pazymiai, int sum, int egzas) {
 	double galutinis = double(sum) / pazymiai.size() * 0.4 + egzas * 0.6;
