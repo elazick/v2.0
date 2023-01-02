@@ -18,25 +18,25 @@ double list1(int a, std::string metodas) {
 		while (getline(file, line)) {
 			studentas duom;
 			file >> vardas;
-			duom.setVardas(vardas);
+			duom.Vardas(vardas);
 			file >> pavarde;
-			duom.setPavarde(pavarde);
+			duom.Pavarde(pavarde);
 			for (int i = 0; i < paz_sk; i++) {
 				file >> paz;
 				pazymiai.push_back(paz);
 			}
-			duom.setPazymiai(pazymiai);
+			duom.Pazymiai(pazymiai);
 			sum = accumulate(pazymiai.begin(), pazymiai.end(), 0);
-			duom.setSum(sum);
+			duom.Sum(sum);
 			file >> egzas;
-			duom.setEgzas(egzas);
+			duom.Egzas(egzas);
 			if (metodas == "V" || metodas == "v") {
 				galutinis = count_galutinis(pazymiai, sum, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			else if (metodas == "M" || metodas == "m") {
 				galutinis = count_mediana(pazymiai, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			stud.push_back(duom);
 			pazymiai.clear();
@@ -84,25 +84,25 @@ double list2(int a, std::string metodas) {
 		while (getline(file, line)) {
 			studentas duom;
 			file >> vardas;
-			duom.setVardas(vardas);
+			duom.Vardas(vardas);
 			file >> pavarde;
-			duom.setPavarde(pavarde);
+			duom.Pavarde(pavarde);
 			for (int i = 0; i < paz_sk; i++) {
 				file >> paz;
 				pazymiai.push_back(paz);
 			}
-			duom.setPazymiai(pazymiai);
+			duom.Pazymiai(pazymiai);
 			sum = accumulate(pazymiai.begin(), pazymiai.end(), 0);
-			duom.setSum(sum);
+			duom.Sum(sum);
 			file >> egzas;
-			duom.setEgzas(egzas);
+			duom.Egzas(egzas);
 			if (metodas == "V" || metodas == "v") {
 				galutinis = count_galutinis(pazymiai, sum, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			else if (metodas == "M" || metodas == "m") {
 				galutinis = count_mediana(pazymiai, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			stud.push_back(duom);
 			pazymiai.clear();
@@ -152,25 +152,25 @@ double vector1(int a, std::string metodas) {
 		while (getline(file, line)) {
 			studentas duom;
 			file >> vardas;
-			duom.setVardas(vardas);
+			duom.Vardas(vardas);
 			file >> pavarde;
-			duom.setPavarde(pavarde);
+			duom.Pavarde(pavarde);
 			for (int i = 0; i < paz_sk; i++) {
 				file >> paz;
 				pazymiai.push_back(paz);
 			}
-			duom.setPazymiai(pazymiai);
+			duom.Pazymiai(pazymiai);
 			sum = accumulate(pazymiai.begin(), pazymiai.end(), 0);
-			duom.setSum(sum);
+			duom.Sum(sum);
 			file >> egzas;
-			duom.setEgzas(egzas);
+			duom.Egzas(egzas);
 			if (metodas == "V" || metodas == "v") {
 				galutinis = count_galutinis(pazymiai, sum, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			else if (metodas == "M" || metodas == "m") {
 				galutinis = count_mediana(pazymiai, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			stud.push_back(duom);
 			pazymiai.clear();
@@ -219,25 +219,25 @@ double vector2(int a, std::string metodas) {
 		while (getline(file, line)) {
 			studentas duom;
 			file >> vardas;
-			duom.setVardas(vardas);
+			duom.Vardas(vardas);
 			file >> pavarde;
-			duom.setPavarde(pavarde);
+			duom.Pavarde(pavarde);
 			for (int i = 0; i < paz_sk; i++) {
 				file >> paz;
 				pazymiai.push_back(paz);
 			}
-			duom.setPazymiai(pazymiai);
+			duom.Pazymiai(pazymiai);
 			sum = accumulate(pazymiai.begin(), pazymiai.end(), 0);
-			duom.setSum(sum);
+			duom.Sum(sum);
 			file >> egzas;
-			duom.setEgzas(egzas);
+			duom.Egzas(egzas);
 			if (metodas == "V" || metodas == "v") {
 				galutinis = count_galutinis(pazymiai, sum, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			else if (metodas == "M" || metodas == "m") {
 				galutinis = count_mediana(pazymiai, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			stud.push_back(duom);
 			pazymiai.clear();
@@ -287,25 +287,25 @@ double st_part(int a, std::string metodas) {
 		while (getline(file, line)) {
 			studentas duom;
 			file >> vardas;
-			duom.setVardas(vardas);
+			duom.Vardas(vardas);
 			file >> pavarde;
-			duom.setPavarde(pavarde);
+			duom.Pavarde(pavarde);
 			for (int i = 0; i < paz_sk; i++) {
 				file >> paz;
 				pazymiai.push_back(paz);
 			}
-			duom.setPazymiai(pazymiai);
+			duom.Pazymiai(pazymiai);
 			sum = accumulate(pazymiai.begin(), pazymiai.end(), 0);
-			duom.setSum(sum);
+			duom.Sum(sum);
 			file >> egzas;
-			duom.setEgzas(egzas);
+			duom.Egzas(egzas);
 			if (metodas == "V" || metodas == "v") {
 				galutinis = count_galutinis(pazymiai, sum, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			else if (metodas == "M" || metodas == "m") {
 				galutinis = count_mediana(pazymiai, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			stud.push_back(duom);
 			pazymiai.clear();
@@ -353,25 +353,25 @@ double partition(int a, std::string metodas) {
 		while (getline(file, line)) {
 			studentas duom;
 			file >> vardas;
-			duom.setVardas(vardas);
+			duom.Vardas(vardas);
 			file >> pavarde;
-			duom.setPavarde(pavarde);
+			duom.Pavarde(pavarde);
 			for (int i = 0; i < paz_sk; i++) {
 				file >> paz;
 				pazymiai.push_back(paz);
 			}
-			duom.setPazymiai(pazymiai);
+			duom.Pazymiai(pazymiai);
 			sum = accumulate(pazymiai.begin(), pazymiai.end(), 0);
-			duom.setSum(sum);
+			duom.Sum(sum);
 			file >> egzas;
-			duom.setEgzas(egzas);
+			duom.Egzas(egzas);
 			if (metodas == "V" || metodas == "v") {
 				galutinis = count_galutinis(pazymiai, sum, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			else if (metodas == "M" || metodas == "m") {
 				galutinis = count_mediana(pazymiai, egzas);
-				duom.setRezultatas(galutinis);
+				duom.Rezultatas(galutinis);
 			}
 			stud.push_back(duom);
 			pazymiai.clear();
