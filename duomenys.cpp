@@ -74,9 +74,10 @@ studentas stud() {
 		std::cout << "Egzamino rezultatas: ";
 		std::cin >> egzas;
 	}
-	duom.setVardas(vardas);
-	duom.setPavarde(pavarde);
-	duom.setEgzas(egzas);
+	
+	duom.Vardas(vardas);
+	duom.Pavarde(pavarde);
+	duom.Egzas(egzas);
 	std::cout << "Ar vesite duomenis patys, ar generuoti atsitiktinai?(P/A)";
 	std::cin >> pasirinkimas;
 	if (std::cin.fail()) {
@@ -88,14 +89,14 @@ studentas stud() {
 	}
 	if (pasirinkimas == "P" || pasirinkimas == "p") {
 		pazym = vedimas_ranka(pazym);
-		duom.setPazymiai(pazym);
+		duom.Pazymiai(pazym);
 	}
 	else if (pasirinkimas == "A" || pasirinkimas == "a") {
 		pazym = auto_generavimas(pazym);
-		duom.setPazymiai(pazym);
+		duom.Pazymiai(pazym);
 	}
 	sum = accumulate(pazym.begin(), pazym.end(), 0);
-	duom.setSum(sum);
+	duom.Sum(sum);
 	std::cout << "Galutini skaiciuoti su vidurkiu ar mediana?(V/M)";
 	std::cin >> pasirinkimas;
 	if (std::cin.fail()) {
@@ -107,11 +108,11 @@ studentas stud() {
 	}
 	if (pasirinkimas == "V" || pasirinkimas == "v") {
 		galutinis = count_galutinis(pazym, sum, egzas);
-		duom.setRezultatas(galutinis);
+		duom.Rezultatas(galutinis);
 	}
 	else if (pasirinkimas == "M" || pasirinkimas == "m") {
 		galutinis = count_mediana(pazym, egzas);
-		duom.setRezultatas(galutinis);
+		duom.Rezultatas(galutinis);
 	}
 	return duom;
 }
